@@ -20,12 +20,34 @@ public:
 		back_=nullptr;
 	}
 	void push_front(const T& data);
-
 	void pop_front();
-
 	void print() const;
 	void reversePrint() const;
 	~DList();
+
+	class const_iterator{
+		Node* curr_;
+	public:
+		const_iterator(){}
+		const_iterator operator++(){}
+		const_iterator operator++(int){}
+		const_iterator operator--(){}
+		const_iterator operator--(int){}
+		bool operator==(const_iterator rhs){}
+		bool operator!=(const_iterator rhs){}
+		const T& operator*()const{}
+	};
+	class iterator:public const_iterator{
+	public:
+		iterator();
+		iterator operator++(){}
+		iterator operator++(int){}
+		iterator operator--(){}
+		iterator operator--(int){}
+		T& operator*(){}
+		const T& operator*()const{}
+	};
+
 };
 
 
@@ -105,12 +127,33 @@ public:
 		back_->prev_=front_;
 	}
 	void push_front(const T& data);
-
 	void pop_front();
-
 	void print() const;
 	void reversePrint() const;
 	~Sentinel();
+
+	class const_iterator{
+		Node* curr_;
+	public:
+		const_iterator(){}
+		const_iterator operator++(){}
+		const_iterator operator++(int){}
+		const_iterator operator--(){}
+		const_iterator operator--(int){}
+		bool operator==(const_iterator rhs){}
+		bool operator!=(const_iterator rhs){}
+		const T& operator*()const{}
+	};
+	class iterator:public const_iterator{
+	public:
+		iterator();
+		iterator operator++(){}
+		iterator operator++(int){}
+		iterator operator--(){}
+		iterator operator--(int){}
+		T& operator*(){}
+		const T& operator*()const{}
+	};
 };
 
 
