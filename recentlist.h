@@ -86,10 +86,6 @@ typename RecentList<T>::iterator RecentList<T>::search(const T& data){
 
 }
 
-template <typename T>
-typename RecentList<T>::const_iterator RecentList<T>::search(const T& data) const{
-
-}
 
 template <typename T>
 typename RecentList<T>::iterator RecentList<T>::erase(iterator it){
