@@ -12,10 +12,10 @@ public:
 		theStack_.pop_front();
 	}
 	T top() const{
-		const_iterator top=theStack_.cbegin();
-		return *top;
+		const_iterator top=theStack_.begin();
+		return *(top);
 	}
-	bool isEmpty(){
-		return (begin()==end())
+	bool isEmpty() const{
+		return (cbegin()==cend())
 	}	
 };
