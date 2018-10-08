@@ -9,7 +9,7 @@
 /*                                                                   */
 /*********************************************************************/
 
-#include "recentlist.completed.h"
+#include "recentlist.h"
 #include <cstring>
 #include <cstdlib>
 #include <iostream>
