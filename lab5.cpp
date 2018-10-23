@@ -28,8 +28,9 @@ void quickSort(int arr[], int left, int right, int threshold){
         int j=right-1;
 
         /* whatever you do to choose pivot, put the code here
-           ensure pivot is at end of array (so if you choose middle)
-           of array as pivot then swap it with arr[right]*/
+           ensure pivot is at end of array.  For example if 
+           you choose middle of array as pivot then swap it 
+           with arr[right]*/
 
         int pivot=arr[right];   //set pivot
         int pivotpt=right;   //NOTE: don't change this, pivot needs
