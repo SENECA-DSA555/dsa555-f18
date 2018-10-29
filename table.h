@@ -1,6 +1,7 @@
 /*************************************************************/
 /*                                                           */
 /*    starter file for a2                                    */
+/*    v 1.1: removed SimpleTable::grow() function def.       */
 /*                                                           */
 /*************************************************************/
 
@@ -65,18 +66,6 @@ int SimpleTable<TYPE>::search(const string& key){
 	return rc;
 }
 
-
-//grow the array by one element
-template <class TYPE>
-void SimpleTable<TYPE>::grow(){
-	Record** newArray=new Record*[max_*2];
-	max_=max_*2;
-	for(int i=0;i<size_;i++){
-		newArray[i]=records_[i];
-	}
-	delete [] records_;
-	records_=newArray;
-}
 
 template <class TYPE>
 SimpleTable<TYPE>::SimpleTable(int capacity): Table<TYPE>(){
