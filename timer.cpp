@@ -19,6 +19,7 @@ void Timer::reset(){
 void Timer::start(){
   clock_t curr=clock();
   if(isstop_){
+    isstop_=0;
     starttime_=(stoptime_==0)?curr:starttime_+(curr-stoptime_);
   }
   else{
