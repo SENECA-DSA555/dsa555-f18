@@ -1,4 +1,4 @@
-#include "timernew.h"
+#include "timer.h"
 /*
   start();  starts the clock running from the current time
   currtime();  returns the current time
