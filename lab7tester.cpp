@@ -15,7 +15,7 @@ bool BST<T>::operator==(const BST<T>& rhs) const{
 }
 
 template <typename T>
-bool BST<T>::isSame(const BST<T>::Node* left, const BST<T>::Node* right) const{
+bool BST<T>::isSame(const typename BST<T>::Node* left, const typename BST<T>::Node* right) const{
 	bool rc;
 	if(!left && !right){
 		rc=true;
