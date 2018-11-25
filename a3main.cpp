@@ -347,7 +347,7 @@ int main(void){
 				isGood=false;
 				cout << "Error 3k: iterator is not going through your tree correct" << endl;
 
-				#if VERBOSE >= 1
+				#if VERBOSE > 1
 				auto it=largeDataTree.begin();
 				cout << "The following is a listing of your tree vs correct" << endl;
 				cout << "your tree  --->   correct value"  << endl;
@@ -360,7 +360,7 @@ int main(void){
 			if(*cintIterator1 != largeDataOrdered[i]){
 				isGood=false;
 				cout << "Error 3l: const_iterator is not going through your tree correct" << endl;
-				#if VERBOSE >= 1
+				#if VERBOSE > 1
 				auto it=largeDataTree.cbegin();
 				cout << "The following is a listing of your tree vs correct" << endl;
 				cout << "your tree  --->   correct value"  << endl;
@@ -521,7 +521,7 @@ int main(void){
 				isGood=false;
 				cout << "Error 4k: iterator is not going through your tree correct" << endl;
 
-				#if VERBOSE >= 1
+				#if VERBOSE > 1
 				auto it=largeDataTree.begin();
 				cout << "The following is a listing of your tree vs correct" << endl;
 				cout << "your tree  --->   correct value"  << endl;
@@ -534,7 +534,7 @@ int main(void){
 			if(*cintIterator1 != largeDataOrdered[i]){
 				isGood=false;
 				cout << "Error 4l: const_iterator is not going through your tree correct" << endl;
-				#if VERBOSE >= 1
+				#if VERBOSE > 1
 				auto it=largeDataTree.cbegin();
 				cout << "The following is a listing of your tree vs correct" << endl;
 				cout << "your tree  --->   correct value"  << endl;
@@ -700,7 +700,7 @@ int main(void){
 				isGood=false;
 				cout << "Error 5k: iterator is not going through your tree correct" << endl;
 
-				#if VERBOSE >= 1
+				#if VERBOSE > 1
 				auto it=largeDataTree.end();
 				cout << "The following is a listing of your tree vs correct" << endl;
 				cout << "your tree  --->   correct value"  << endl;
@@ -713,7 +713,7 @@ int main(void){
 			if(*cintIterator1 != largeDataOrdered[i]){
 				isGood=false;
 				cout << "Error 5l: const_iterator is not going through your tree correct" << endl;
-				#if VERBOSE >= 1
+				#if VERBOSE > 1
 				auto it=largeDataTree.cend();
 				cout << "The following is a listing of your tree vs correct" << endl;
 				cout << "your tree  --->   correct value"  << endl;
@@ -896,7 +896,7 @@ int main(void){
 				isGood=false;
 				cout << "Error 6k: iterator is not going through your tree correct" << endl;
 
-				#if VERBOSE >= 1
+				#if VERBOSE > 1
 				auto it=largeDataTree.end();
 				cout << "The following is a listing of your tree vs correct" << endl;
 				cout << "your tree  --->   correct value"  << endl;
@@ -909,7 +909,7 @@ int main(void){
 			if(*cintIterator1 != largeDataOrdered[i]){
 				isGood=false;
 				cout << "Error 6l: const_iterator is not going through your tree correct" << endl;
-				#if VERBOSE >= 1
+				#if VERBOSE > 1
 				auto it=largeDataTree.cend();
 				cout << "The following is a listing of your tree vs correct" << endl;
 				cout << "your tree  --->   correct value"  << endl;
