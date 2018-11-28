@@ -3,7 +3,7 @@
 /*   This is the official tester for    */
 /*   assignment 3                       */
 /*                                      */
-/*                                      */
+/*   version 1.1: fixed bug in test 6   */
 /*                                      */
 /*   To compile on matrix:              */
 /*   g++ a3main.cpp -std=c++0x          */
@@ -853,7 +853,7 @@ int main(void){
 				}
 				#endif
 			}		
-			if(i < 8){
+			if(i < recCap-1){
 				if(*recIterator2 != orderedRecords[i+1]){
 					isGood=false;
 					cout << "Error 6h: Your postfix -- operator is not returning the correct value" << endl;
@@ -919,7 +919,7 @@ int main(void){
 				#endif
 			}		
 
-			if(i < 8){
+			if(i < numLarge-1){
 				if(*intIterator2 != largeDataOrdered[i+1]){
 					isGood=false;
 					cout << "Error 6c: Your postfix -- operator is not returning the correct value" << endl;
