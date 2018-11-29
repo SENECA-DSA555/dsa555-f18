@@ -964,7 +964,7 @@ int main(void){
 	 	cout << "Testing for Assignment 3 completed successfully" << endl;
 	}
 	else{
-		cout << numPassed << " / 5 tests passed.  Looks like you still" << endl;
+		cout << numPassed << " / 6 tests passed.  Looks like you still" << endl;
 		cout << "have some work to do" << endl;
 	}
 	return 0;
